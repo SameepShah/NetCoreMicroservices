@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platforms-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: platformservice
+  template:
+    metadata:
+      labels:
+        app: platformservice
+    spec:
+      containers:
+        - name: platformservice
+          image: shahsameep/platformservice:latest
+# spec:ctor:
+#     match myapp
+#   template:
+#     metadata:
+#       platforms-depl:
+#         platforms-depl: myapp
+#     spec:
+#       containers:
+#       - name: myapp
+#         image: <Image>
+#         resources:
+#           limits:
+#             memory: "128Mi"
+#             cpu: "500m"
+#         ports:
+#         - containerPort: <Port>
