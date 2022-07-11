@@ -1,2 +1,5 @@
 dotnet new webapi -n <ServiceName>
 code -r foldername (Open visual studio code in new folder)
+
+-- Add Packages
+dotnet add package <packagename> --version <version>
