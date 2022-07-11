@@ -1,3 +1,9 @@
+Reference
+https://www.youtube.com/watch?v=DgVjEo3OGBI&list=RDCMUCIMRGVXufHT69s1uaHHYJIA&start_radio=1
+
+
+Commands
+==============================================================
 dotnet new webapi -n <ServiceName>
 code -r foldername (Open visual studio code in new folder)
 
